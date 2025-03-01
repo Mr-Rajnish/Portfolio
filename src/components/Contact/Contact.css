@@ -45,7 +45,7 @@
 
 .contact-form button {
     width: 80%;
-     margin-left: 50px;
+     margin-left: 4vw;
     padding: 12px;
     background: #00ff88;
     border: none;
@@ -74,5 +74,12 @@
 
     .contact-form {
         width: 90%;
+    }
+}
+
+@media(max-width:340px){
+    .contact-image img {
+        width: 275px; /* Adjust as needed */
+      
     }
 }
