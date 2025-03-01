@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.light {
+  background-color: #e9f0f0;
+  color: #060606;
+}
+
+.dark {
+  background-color: #262424;
+  color: #fff;
+}
+
+/* Add styles for navbar, cards, etc. */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.arrow {
+  cursor: pointer;
+  font-size: 2rem;
+  position: absolute;
+}
+
+.arrow.left { left: 10px; }
+.arrow.right { right: 10px; }

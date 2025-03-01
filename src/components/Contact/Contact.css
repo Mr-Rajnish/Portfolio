@@ -1,0 +1,78 @@
+/* Contact Section Styling */
+
+.contact-section1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px; /* Adds a gap between image & form */
+    padding: 50px;
+    min-height: 60vh;
+}
+
+/* Left: Contact Image */
+.contact-image img {
+    width: 400px; /* Adjust as needed */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Right: Contact Form */
+.contact-form {
+    background: #1d1d1d;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    width: 400px;
+}
+
+.contact-form h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background: #2a2a2a;
+    border: 1px solid #444;
+    border-radius: 5px;
+    color: white;
+}
+
+.contact-form button {
+    width: 80%;
+     margin-left: 50px;
+    padding: 12px;
+    background: #00ff88;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #00cc77;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .contact-section1 {
+        flex-direction: column;
+    }
+
+    .contact-image img {
+        width: 300px;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+}

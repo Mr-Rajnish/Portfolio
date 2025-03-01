@@ -1,0 +1,17 @@
+/* Footer Container */
+.custom-footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 40px;
+   
+    font-family: "Arial", sans-serif;
+    height: 10vh;
+  }
+  
+  /* Footer Text */
+  .footer-text {
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  

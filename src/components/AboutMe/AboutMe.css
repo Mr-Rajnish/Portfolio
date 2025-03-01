@@ -1,0 +1,248 @@
+.about-me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 95vh;
+    padding:3rem 5rem;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-me .text-container {
+    flex: 1;
+    max-width: 50%;
+    text-align: left;
+  }
+
+  /* Icons Container */
+  .footer-icons {
+    margin-top: 12px;
+    display: flex;
+    gap: 35px;
+  }
+  
+  /* Icons Styling */
+  .icon {
+    font-size: 28px;
+    color: #555;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  /* Individual Icon Colors */
+  .github-icon{
+    color: #171515;
+    transform: scale(1.2);
+  }
+  
+  .linkedin-icon {
+    color: #0077b5;
+    transform: scale(1.2);
+  }
+  
+  .instagram-icon{
+    color: #e4405f;
+    transform: scale(1.2);
+  }
+  
+  .leetcode-icon {
+    color: #f89f1b;
+    transform: scale(1.2);
+  }
+  
+
+  .typing-effect {
+    font-family: monospace; /* Gives a typewriter-like feel */
+    display: inline-block;
+    border-right: 2px solid #000; /* Simulates a blinking cursor */
+    animation: blink 0.75s step-end infinite; /* Blinking cursor effect */
+    margin-top: 0;
+  }
+  
+  /* Blinking cursor animation */
+  @keyframes blink {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #000;
+    }
+  }
+  
+  .about-me img {
+    width: 27vw;
+    height: 70vh;
+    margin-top: 20px;
+   border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  .about-me p {
+    max-width: 600px;
+    line-height: 1.8;
+    color: #333;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dark .about-me {
+    background: linear-gradient(135deg, #2d2d2d 0%, #444 100%);
+  }
+  
+  .dark .about-me p {
+    color: #e0e0e0;
+    background: rgba(50, 50, 50, 0.9);
+  }
+
+  .about-me img {
+    width: 27vw;
+    height: 67vh;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+/* Image Container */
+.image-container {
+    position: relative;
+    display: inline-block; /* Adjusts size based on content */
+}
+
+/* Top-left border */
+.image-container::before,
+.image-container::after {
+    content: "";
+    position: absolute;
+    width: 130px;  /* Border width */
+    height: 150px; /* Border height */
+    border: 9px solid #0fd2fe; /* Stylish color */
+}
+
+/* Top-left border */
+.image-container::before {
+    top: -5px;
+    left: -10px;
+    border-right: none;
+    border-bottom: none;
+}
+
+/* Bottom-right border */
+.image-container::after {
+    bottom: -10px;
+    right: -10px;
+    border-left: none;
+    border-top: none;
+}
+
+  
+  @media (max-width: 768px) {
+    .about-me {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .about-me .text-container {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .about-me img {
+      width: 80vw;
+      height: auto;
+      margin-top: 2rem;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .image-container::before {
+        top: 22px;
+        left: -10px;
+        border-right: none;
+        border-bottom: none;
+    }
+    
+  }
+
+  h1{
+    font-size: 3rem;
+    margin-top: 50px;
+  }
+
+  h2{
+    font-size: 2.5rem;
+  }
+
+  #resume-link {
+    height: 50px;
+    width: 150px;
+    border-radius: 5%;
+    background-color: black;
+  }
+
+  #resume-link a{
+    color: white ;
+    text-decoration: none;
+    font-size: larger;
+  }
+  /* Container for the service cards */
+.services-container {
+    display: flex;
+    justify-content: space-around;
+  
+  }
+  .services-h1{
+  text-align: center;
+  font-weight: 600;
+  font-size: 2.5rem;
+  }
+  
+
+  /* Individual service card styling */
+  .service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    padding: 1.5rem;
+    text-align: center;
+    width: 250px;
+    height: 39vh;
+    margin: 2rem auto;
+    transition: transform 0.3s ease;
+    }
+
+  .service-card:hover{
+    transform: scale(1.1);
+  }
+  .service-type{
+    height: 130px;  
+}
+  
+  /* Service title styling */
+  .service-card h3 {
+    font-size: 1.3rem;
+    color: black; /* Purple color */
+    margin-bottom: 1rem;
+  }
+  
+  /* Service description styling */
+  .service-card p {
+    font-size: 0.9rem;
+    color: #666; /* Gray color */
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .services-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .service-card {
+      width: 80%;
+      margin-bottom: 1rem;
+    }
+  }
