@@ -47,21 +47,22 @@ function Projects() {
 
   return (
     <div className="projects" id="projects">
-      <h1 className="projects-heading">Projects</h1>
-      <div className="carousel-container">
-        <motion.div
-          className="carousel"
-          animate={{ x: ['0%', '-100%'] }}
-          transition={{
-            ease: 'linear',
-            duration: 20, // Adjust speed
-            repeat: Infinity,
-          }}
-        >
-          {projectList.map((project, index) => (
-            <Card key={index} project={project} />
-          ))}
-        </motion.div>
+            <h1 className="projects-heading">Projects</h1>
+            <div className="carousel-container">
+            <motion.div
+  className="carousel"
+  animate={{ x: ['0%', '-100%'] }} // Ensures smooth looping
+  transition={{
+    ease: 'linear',
+    duration: 20, // Adjust speed for smooth effect
+    repeat: Infinity,
+  }}
+>
+  {projectList.map((project, index) => (
+    <Card key={index} project={project} />
+  ))}
+</motion.div>
+
       </div>
     </div>
   );

@@ -44,9 +44,10 @@
 }
 
 .contact-form button {
-    width: 80%;
-     margin-left: 4vw;
-    padding: 12px;
+    width: 120px;
+    height: 40px;
+     display: block;
+     margin: auto;
     background: #00ff88;
     border: none;
     border-radius: 5px;
@@ -54,6 +55,7 @@
     color: black;
     cursor: pointer;
     transition: 0.3s;
+    
 }
 
 .contact-form button:hover {
@@ -79,7 +81,7 @@
 
 @media(max-width:340px){
     .contact-image img {
-        width: 275px; /* Adjust as needed */
+        width: 255px; /* Adjust as needed */
       
     }
 }
