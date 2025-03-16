@@ -53,8 +53,8 @@ function AboutMe() {
     return () => clearTimeout(timer);
   }, [currentText, isDeleting, currentPhraseIndex, phrases, typingSpeed]);
   return (
-    <div>
-    <div className="about-me" id="about">
+    <div id='home'>
+    <div className="about-me">
 
       <div className="text-container">
         <h1>Hey !!<br/> Rajnish Singh here,</h1><b> <h2 className="typing-effect">{currentText}</h2></b><br /><br />
@@ -85,9 +85,12 @@ function AboutMe() {
       </div>
 
       </div>
-   
-      <h1 className='services-h1'>Services</h1>
-      
+
+
+
+      <div id='services' className="service">
+      <h1 className='services-h1' style={{paddingTop:'5rem'}}>Services</h1>
+      <div className="underline"></div>
       <div className="services-container">
        
         
@@ -114,6 +117,7 @@ function AboutMe() {
           <h3>Backend Development</h3>
           <p>Developing robust server-side logic and database management.</p>
           <img className='service-type' src={backend} alt="" />
+        </div>
         </div>
       </div>
     </div>

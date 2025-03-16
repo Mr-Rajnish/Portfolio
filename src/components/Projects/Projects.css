@@ -2,19 +2,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: rem;
+   margin-top: 0;
     position: relative;
-    background: linear-gradient(135deg, #e0e0e0 0%, #f5f7fa 100%);
+    background: linear-gradient(135deg,  #a09e9e 0%, #f5f7fa 100%);
     overflow: hidden;
-    height: 85vh;
+    height: 110vh;
 }
   
 .projects-heading {
     text-align: center;
-    margin-bottom: 5rem;
     font-size: 3.5rem;
-    color: #2d2d2d;
+   
 }
+
+.underline-project{
+    width: 60px;
+    height: 4px;
+    background: #0077b5;
+    margin: 0 auto 3rem auto;
+    border-radius: 2px;
+    margin-bottom: 140px;
+  }
 
 .carousel-container {
     width: 100%;
@@ -22,29 +30,35 @@
     position: relative;
     display: flex;
     justify-content: center;
+    border: none;
+   
 }
 
 .carousel {
     display: flex;
-    gap: 2rem;
-    min-width: 200%; /* Ensures smooth transition */
+    gap: 2.5rem;
+    min-width: 200%;
+    border:none; /* Ensures smooth transition */
 }
 
 .card-content {
     flex: 0 0 calc(100% / 4); /* Ensures 4 cards are visible at once */
-    max-width: calc(100% / 4);
-    height: 100%;
+    max-width: calc(100% / 3);
+     height: 100%;
     display: flex;
     flex-direction: column;
     background: #fff;
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+     
 }
+
+
   
 .project-img {
     width: 100%;
-    height: 350px;
+    height: 340px;
     object-fit: conatin;
 }
 
@@ -56,13 +70,27 @@
 
 @media(max-width:550px){
     .project-img{
-       height: 200px;
+       height: 240px;
+      
+    }
+    .carousel{
+        min-width: 350%;
     }
 }
 
 @media(max-width:340px){
     .project-img{
-       height: 150px;
+       height: 240px;
+      
+    }
+
+    .card-content{
+        width: 350px !important;
+    }
+
+    .carousel{
+        height:320px;
+       
     }
 }
   
@@ -70,6 +98,7 @@
     flex: 1;
     padding: 1rem;
     background: linear-gradient(135deg, #f5f7fa 0%, #e0e0e0 100%);
+    border-bottom: 2px solid black;
 }
   
 .info h3 {
@@ -79,7 +108,7 @@
   
 /* Dark mode styles */
 .dark .projects {
-    background: linear-gradient(135deg, #333 0%, #444 100%);
+    background: linear-gradient(135deg, #000208 0%, #131212 100%);
 }
   
 .dark .projects-heading {

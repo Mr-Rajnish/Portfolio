@@ -1,0 +1,240 @@
+.achievement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    position: relative;
+    background: linear-gradient(135deg, #a09e9e 0%, #f5f7fa 100%);
+    overflow: hidden;
+    height: 90vh;
+  }
+  
+  .achievement-heading {
+    text-align: center;
+    font-size: 3.5rem;
+  }
+  
+  .underline-achievement {
+    width: 60px;
+    height: 4px;
+    background: #0077b5;
+    margin: 0 auto 3rem auto;
+    border-radius: 2px;
+    margin-bottom: 140px;
+  }
+  
+  .achievement-carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+     
+  }
+  
+  .achievement-carousel {
+    display: flex;
+    gap: 3rem;
+    min-width: 200%;
+    height: 40vh; /* Ensures smooth transition */
+    
+  }
+
+  
+  .achievement-card{
+    border: 2px solid #0077b5 ;
+   
+  
+  }
+  .achievement-card-content {
+    flex: 0 0 calc(100% / 4); /* Ensures 4 cards are visible at once */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 2px solid  #00bcd4 ;
+  }
+
+  .achievement-card-border{
+    border: 2px solid   #0077b5 !important;
+  }
+  
+  .achievement-info {
+    flex: 1;
+    padding: 1rem;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e0e0e0 100%);
+    border: 2px solid black;
+  }
+  
+  .achievement-info h3 {
+    margin: 0 0 0.5rem 0;
+    color: #00bcd4;
+    font-weight: bold;
+  }
+  
+  .achievement-info p {
+    color: #2d2d2d;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Dark mode and responsive styles omitted for brevity */
+/* Dark mode styles */
+.dark .achievement {
+  background: linear-gradient(135deg, #000208 0%, #131212 100%);
+}
+
+.dark .achievement-heading {
+  color: #e0e0e0;
+}
+
+.dark .card-content {
+  background: #2d2d2d;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.dark .info {
+  background: linear-gradient(135deg, #444 0%, #333 100%);
+}
+
+.dark .info h3 {
+  color: #00bcd4; /* Keep cyan for title in dark mode */
+}
+
+.dark .info p {
+  color: #fff; /* White text for description in dark mode */
+}
+
+@media (max-width: 1468px) {
+    .achievement-carousel {
+      
+        min-width: 350%;
+        height: 37vh;
+  /* Ensures smooth transition */  
+      }
+}
+
+/* Responsive adjustments */
+@media (max-width: 1168px) {
+    .achievement-carousel {
+      
+        min-width: 350%;
+        height: 38vh;
+  /* Ensures smooth transition */  
+      }
+}
+
+/* Responsive adjustments */
+@media (max-width: 968px) {
+    .achievement-carousel {
+      
+        min-width: 380%;
+        height: 39vh;
+  /* Ensures smooth transition */  
+      }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .achievement-carousel {
+       
+        min-width: 350%;
+        height: 40vh;
+  /* Ensures smooth transition */  
+      }
+
+      .achievement-description{
+        font-size: 13px !important;
+      }
+}
+
+@media (max-width: 550px) {
+    .achievement-carousel {
+      
+        min-width: 400%;
+        height: 45vh;
+  /* Ensures smooth transition */  
+      }
+}
+
+@media (max-width: 440px) {
+    .achievement-carousel {
+      
+        min-width: 550%;
+        height: 45vh;
+  /* Ensures smooth transition */  
+      }
+    
+}
+
+@media (max-width: 340px) {
+    .achievement-carousel {
+      
+        min-width: 620%;
+        height: 45vh;
+  /* Ensures smooth transition */  
+      }
+     
+      
+      .achievement-heading {
+        text-align: center;
+        font-size: 2.3rem;
+      }
+}
+
+.achievement-card {
+    flex: 0 0 calc(100% / 4); /* Ensures 4 cards visible at once */
+    max-width: calc(100% / 8);
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    padding: 1rem;
+  }
+  
+   .dark .achievement-card{
+    border: 4px solid  #0077b5 ;
+  }
+
+  .dark .achievement-card-border{
+    border: 2px solid  #0077b5;
+  }
+  
+  .achievement-card-border {
+    border: 3px solid #0077b5;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .achievement-year {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #0077b5;
+    margin-bottom: 0.5rem;
+  }
+  
+  .achievement-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #0077b5;
+    margin-bottom: 0.5rem;
+  }
+  
+  .achievement-description {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+  }
+
+  .dark .achievement-card{
+    background: #212222;
+  }
+
+  .dark .achievement-description{
+    color: white !important;
+  }
+  

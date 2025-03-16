@@ -41,3 +41,7 @@ body {
 
 .arrow.left { left: 10px; }
 .arrow.right { right: 10px; }
+
+html {
+  scroll-behavior: smooth;
+}

@@ -16,7 +16,7 @@ function Projects() {
         link: 'https://movie-react-orcin.vercel.app/'
       },
     {
-      title: 'Rajnish Restro: Food Delivery Application',
+      title: 'Rajnish Restro Application',
       image: RajnishRestro,
       link: 'https://food-delivery-frontend-qa09.onrender.com/'
     },
@@ -47,7 +47,8 @@ function Projects() {
 
   return (
     <div className="projects" id="projects">
-            <h1 className="projects-heading">Projects</h1>
+            <h1 style={{paddingTop:'2rem'}} className="projects-heading">Projects</h1>
+            <div className="underline-project"></div>
             <div className="carousel-container">
             <motion.div
   className="carousel"
@@ -70,7 +71,7 @@ function Projects() {
 
 function Card({ project }) {
   return (
-    <div className="card-content">
+    <div  className="card-content">
       <a href={project.link} target="_blank" rel="noreferrer">
         <img className="project-img" src={project.image} alt={project.title} />
         <div className="info">

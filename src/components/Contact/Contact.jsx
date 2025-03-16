@@ -4,8 +4,11 @@ import contactImage from '../../assets/contact-us.webp'
 
 const Contact = () => {
   return (
-    <> 
+    <div id='contact'>
+     <h1 style={{paddingTop:'5rem'}} className="contact-heading">Contact Me</h1>
+     <div className="underline"></div>
     <div className="contact-section1">
+
       {/* Left Side: Image */}
       <div className="contact-image">
         <img src={contactImage} alt="Contact Illustration" />
@@ -13,7 +16,7 @@ const Contact = () => {
 
       {/* Right Side: Contact Form */}
       <div className="contact-form">
-        <h2>Contact Me</h2>
+       <h2>Contact Form</h2>
         <form>
           <input type="text" placeholder="Name" required />
           <input type="email" placeholder="Email" required />
@@ -22,7 +25,7 @@ const Contact = () => {
         </form>
       </div>
     </div>
-    </>
+    </div>
   );
 };
 

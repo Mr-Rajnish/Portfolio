@@ -7,6 +7,9 @@ import AboutMe from './components/AboutMe/AboutMe';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
+import Experience from './components/Experience/Experience';
+import Education from './components/Education/Education';
+import Achievement from './components/Achievements/Achievement';
 
 function App() {
   const [isDarkMode, setDarkMode] = useState(false);
@@ -26,8 +29,11 @@ function App() {
   return (
     <div className={isDarkMode ? 'dark' : 'light'}>
       <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-      <AboutMe />
+      <AboutMe/>
+      <Experience/>
       <Projects />
+      <Education/>
+      <Achievement/>
       <Contact />
       <Footer />
     </div>

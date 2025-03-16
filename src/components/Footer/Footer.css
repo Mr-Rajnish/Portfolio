@@ -6,11 +6,17 @@
    
     font-family: "Arial", sans-serif;
     height: 10vh;
+    color: black;
+  }
+
+  .dark .custom-footer{
+    background: rgb(0, 7, 15);
+    color: white;
   }
   
   /* Footer Text */
   .footer-text {
-    margin: 0;
+    margin: 10px;
     font-weight: 600;
   }
   

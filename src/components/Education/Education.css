@@ -1,0 +1,207 @@
+.education-container {
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    text-align: center;
+    position: relative;
+   
+  }
+  
+  .education-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #131414;
+    margin-bottom: 1rem;
+  }
+  
+  .underline {
+    width: 60px;
+    height: 4px;
+    background: #0077b5;
+    margin: 0 auto 3rem auto;
+    border-radius: 2px;
+  }
+  
+  .timeline-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+  
+  .vertical-line {
+    position: absolute;
+    left: 50%;
+    width: 8px;
+    height: 95%;
+    background: #0077b5;;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-card {
+  
+    position: relative;
+    width: 35%;
+    height: 20rem;
+    margin: 10px 0;
+    padding: 25px;
+    border: 1px solid rgb(33, 93, 113);
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .timeline-card.right {
+    left: 50%;
+    margin-left: 25px;
+  }
+  
+  .timeline-card.left {
+    left: 8%;
+    margin-right: 25px;
+  }
+  
+  .connector {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 4px;
+    background: #0077b5;
+  }
+  
+  .timeline-card.right .connector {
+    left: -30px;
+  }
+  
+  .timeline-card.left .connector {
+    right: -30px;
+  }
+
+  .card-content{
+    border: 2px solid  #0077b5 ;
+    flex: 0 0 calc(100% / 4);
+    max-width: calc(100% / 1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .card-date {
+    padding-top: 25px;
+    color: #282e30;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .card-title {
+    color: #0077b5;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-organization {
+    color: #282e30;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+
+  .card-Marks{
+    color: #0e7fbc;
+  }
+  
+  .card-location {
+    color: #23292c;
+    line-height: 1.6;
+    font-size: 0.95rem;
+  }
+  
+  @media (max-width: 768px) {
+    .timeline-card {
+      width: 95%;
+      margin: 10px 0 !important;
+      padding: 10px;
+    }
+    
+    .timeline-card.right  {
+        left: 0px;
+        right: 0px;
+      }
+      .timeline-card.left{
+        left: 0px;
+      }
+      .timeline-card{
+        width: 90%;
+        margin-bottom: 30px !important;
+      }
+
+    .vertical-line,
+    .connector {
+      display: none;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .timeline-card {
+      width: 100%;
+   
+      margin: 10px 0 !important;
+      padding: 10px;
+    }
+    .timeline-card.right{
+        left: 0px;
+      }
+
+      .timeline-card.left{
+        left: 0px;
+      }
+      .education-container {
+        padding: 1rem 0rem;     
+      }
+
+      .timeline-card{
+        width: 90%;
+        margin-bottom: 30px !important;
+      }
+      
+}
+  
+  /* Dark Mode */
+  .dark .education-container {
+    background: linear-gradient(135deg, #2d3436 0%, #000000 100%);
+  }
+
+  .dark .education-heading{
+    color: white;
+  }
+  
+  .dark .timeline-card {
+    background: #2d3436;
+  }
+  
+  .dark .card-date,
+  .dark .card-company,
+  .dark .card-description {
+    color: #dfe6e9;
+  }
+  
+  .dark .card-title{
+    color: #33b3f8;
+  }
+  .dark .timeline-card{
+    border: 4px solid  #0077b5 ;
+  }
+
+  .dark .card-organization{
+    color: white;
+    font-size: larger;
+    font-weight: 700;
+  }
+
+  .dark .card-location{
+    color: white;
+    font-size: larger;
+  }

@@ -9,14 +9,21 @@ function Navbar({ isDarkMode, toggleDarkMode }) {
     setMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <div className="navbar">
       <img id="logo" src={logo} alt="Logo" />
       <div className="nav-links">
-        <a href="#about">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#home" onClick={closeMenu}>Home</a>
+        <a href="#services" onClick={closeMenu}>Services</a>
+        <a href="#experience" onClick={closeMenu}>Experience</a>
+        <a href="#projects" onClick={closeMenu}>Projects</a>
+        <a href="#education" onClick={closeMenu}>Education</a>
+        <a href="#achievements" onClick={closeMenu}>Achievements</a>
+        <a href="#contact" onClick={closeMenu}>Contact</a>
       </div>
       <button className="theme-toggle" onClick={toggleDarkMode}>
         {isDarkMode ? '🌞 Light Mode' : '🌜 Dark Mode'}
@@ -28,11 +35,14 @@ function Navbar({ isDarkMode, toggleDarkMode }) {
       </div>
       {isMenuOpen && (
         <div className="dropdown-menu">
-          <a href="#about">Home</a>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-          <button onClick={toggleDarkMode}>
+          <a href="#home" onClick={closeMenu}>Home</a>
+          <a href="#services" onClick={closeMenu}>Services</a>
+          <a href="#experience" onClick={closeMenu}>Experience</a>
+          <a href="#projects" onClick={closeMenu}>Projects</a>
+          <a href="#education" onClick={closeMenu}>Education</a>
+          <a href="#achievements" onClick={closeMenu}>Achievements</a>
+          <a href="#contact" onClick={closeMenu}>Contact</a>
+          <button onClick={() => { toggleDarkMode(); closeMenu(); }}>
             {isDarkMode ? '🌞 Light Mode' : '🌜 Dark Mode'}
           </button>
         </div>

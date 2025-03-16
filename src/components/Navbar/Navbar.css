@@ -113,7 +113,7 @@
   }
   
   /* Media Query for Medium Screens */
-  @media (max-width: 768px) {
+  @media (max-width: 1250px) {
     .nav-links,
     .theme-toggle {
       display: none; /* Hide links and button on medium screens */
