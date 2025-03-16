@@ -6,7 +6,7 @@
     justify-content: center;
     gap: 50px; /* Adds a gap between image & form */
     padding: 70px;
-    min-height: 50vh;
+    min-height: 0vh;
 }
 .contact-heading{
     text-align: center;
@@ -25,10 +25,10 @@
 /* Right: Contact Form */
 .contact-form {
     background: #1d1d1d;
-    padding: 30px;
+    padding: 40px;
     border-radius: 10px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-    width: 380px;
+    width: 400px;
 }
 
 .contact-form h2 {
